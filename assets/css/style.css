@@ -19,41 +19,12 @@ nav a {
   color: #333;
 }
 
-/* .hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  background: white;
-  overflow: hidden;
-  padding: 2rem;
-} */
-
 .hero {
   position: relative;
   height: 100vh;
   background: white;
   overflow: hidden;
 }
-
-
-/* .background-name {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-  text-align: center;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #dda85384;
-  user-select: none;
-  line-height: 1;
-  white-space: nowrap;
-} */
 
 .background-name {
   position: absolute;
@@ -76,25 +47,6 @@ nav a {
   transform: scaleX(1);
 }
 
-
-/* .full-name {
-  font-size: clamp(3rem, 15vw, 8rem);
-  font-size: clamp(3rem, 18vw, 12rem);
-  line-height: 0.8; 
-  letter-spacing: 0.1em;
-  display: inline-block;
-  text-align: justify; 
-  width: 100%;
-  transform: scaleX(1.1); 
-} */
-
-/* .hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-} */
-
 .hero-content {
   position: absolute;
   top: 30%;
@@ -112,7 +64,6 @@ nav a {
 
 .hero-text {
   font-family: 'Cursive', 'Brush Script MT', cursive;
-  /* font-size: 2.8rem; */
   font-size: clamp(3rem, 7vw, 7rem);
   color: #1e3a8a;
   margin: 0 0 0.5rem;
@@ -127,11 +78,6 @@ nav a {
   color: #333;
   z-index: 1;
 }
-/* .subtitle {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 0.2rem 0;
-} */
 
 /* .btn {
   display: inline-block;
@@ -148,11 +94,112 @@ nav a {
   background: #2563eb;
 } */
 
+.about-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.about-summary h1 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.about-summary p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.life-blog {
+  margin-top: 3rem;
+}
+
+.life-blog h2 {
+  font-size: 1.7rem;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.blog-entry {
+  margin-bottom: 2rem;
+}
+
+.blog-entry h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.blog-entry p,
+.places p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.places h4 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #1e3a8a;
+}
+
+
 .content {
   padding: 60px 20px;
   max-width: 800px;
   margin: auto;
 }
+
+.cv-page {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.cv-section {
+  margin-bottom: 3rem;
+}
+
+.cv-item {
+  margin-bottom: 2rem;
+}
+
+.cv-header-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.cv-place {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.cv-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #555;
+}
+
+.cv-date {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 1rem;
+}
+
+.cv-desc {
+  margin: 0;
+  line-height: 1.5;
+}
+
 
 .gallery {
   display: flex;
@@ -167,9 +214,67 @@ nav a {
   border-radius: 8px;
 }
 
-form {
+.contact-page {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-banner {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.contact-banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-block h2 {
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-block ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-block li {
+  margin-bottom: 0.3rem;
+}
+
+.contact-block a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-block a:hover {
+  color: #1e3a8a;
+}
+
+.contact-block p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* form {
   display: flex;
   flex-direction: column;
   gap: 1em;
   max-width: 500px;
-}
+} */

@@ -1,2 +1,2 @@
-# Daisyj.github.io
+# Dareenatj.github.io
 Personal Portfolio
