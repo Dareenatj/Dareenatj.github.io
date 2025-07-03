@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fdfdfd;
-  color: #222;
+  color: #183B4E;
 }
 
 .nav {
@@ -16,9 +16,10 @@ body {
 }
 
 .nav a {
+  font-size: 1.2rem;
   margin: 0 1em;
   text-decoration: none;
-  color: #333;
+  color: #183B4E;
 }
 
 .nav a:hover {
@@ -31,7 +32,7 @@ body {
 
 /* Mobile styles only */
 @media (max-width: 600px) {
-  .hamburger {
+  /* .hamburger {
     display: block;
     font-size: 2rem;
     cursor: pointer;
@@ -39,6 +40,24 @@ body {
     color: #dda853;
     background-color: #1e3a8a;
     text-align: right;
+  } */
+   .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #dda853; /* square background */
+    padding: 0.75rem 0.9rem;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .hamburger:hover {
+    color: #183B4E;
   }
 
   .nav {
@@ -110,12 +129,13 @@ body {
 }
 
 .subtitle {
+  font-size: 1.2rem;
   position: absolute;
   top: 60%;
   right: 5%;
   text-align: right;
   font-size: 1.2rem;
-  color: #333;
+  color: #183B4E;
   z-index: 1;
 }
 
@@ -170,7 +190,7 @@ body {
 .blog-entry h3 {
   font-size: 1.3rem;
   margin-bottom: 0.3rem;
-  color: #333;
+  color: #183B4E;
 }
 
 .blog-entry p,
@@ -186,13 +206,25 @@ body {
   color: #1e3a8a;
 }
 
-
 .content {
   padding: 60px 20px;
   max-width: 800px;
   margin: auto;
 }
 
+.content h2 {
+  font-size: 1.7rem;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+}
+
+.content h4 {
+  font-size: 1.1rem;
+  color: #183B4E;
+}
 .cv-page {
   padding: 3rem 1.5rem;
   max-width: 800px;
@@ -231,8 +263,8 @@ body {
 
 .cv-date {
   white-space: nowrap;
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 1rem;
+  color: #555;
   margin-left: 1rem;
 }
 
@@ -298,7 +330,8 @@ body {
 }
 
 .contact-block a {
-  color: #333;
+  font-size: 1.2rem;
+  color: #183B4E;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -308,8 +341,8 @@ body {
 }
 
 .contact-block p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #183B4E;
 }
 
 
